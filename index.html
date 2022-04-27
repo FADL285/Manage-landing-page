@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
-  <body>
+  <body
+    class="bg-[url('/images/bg-tablet-pattern.svg')] bg-no-repeat bg-[length:400px] bg-[right_-3rem_top_-3rem] md:bg-[length:725px] md:bg-[right_-2rem_top_-7rem]"
+  >
     <div id="app">
       <!-- Navbar -->
       <nav class="relative container mx-auto p-6">
@@ -34,6 +36,32 @@
           >
             Get Started
           </a>
+
+          <!-- Hamburger Icon -->
+          <button
+            id="menu-btn"
+            class="block hamburger md:hidden focus:outline-none cursor-pointer relative transition-all delay-300 w-6 h-6"
+          >
+            <span class="hamburger-top absolute top-0 left-0 w-6 h-[2px] bg-black"></span>
+            <span class="hamburger-middle absolute top-0 left-0 w-6 h-[2px] bg-black translate-y-2"></span>
+            <span class="hamburger-bottom absolute top-0 left-0 w-6 h-[2px] bg-black translate-y-4"></span>
+          </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden">
+          <ul
+            id="mobile-menu"
+            class="absolute flex flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md hidden"
+          >
+            <li><a href="#" class="hover:text-darkGrayishBlue">Pricing</a></li>
+            <li><a href="#" class="hover:text-darkGrayishBlue">Product</a></li>
+            <li><a href="#" class="hover:text-darkGrayishBlue">About Us</a></li>
+            <li><a href="#" class="hover:text-darkGrayishBlue">Careers</a></li>
+            <li>
+              <a href="#" class="hover:text-darkGrayishBlue">Community</a>
+            </li>
+          </ul>
         </div>
       </nav>
 
@@ -229,7 +257,10 @@
       </section>
 
       <!-- Call to action Section -->
-      <section id="cta" class="bg-brightRed">
+      <section
+        id="cta"
+        class="bg-brightRed bg-[url('/images/bg-simplify-section-mobile.svg')] bg-no-repeat bg-left md:bg-[url('/images/bg-simplify-section-desktop.svg')]"
+      >
         <div
           class="container mx-auto flex flex-col items-center justify-between px-6 py-24 space-y-12 md:py-12 md:flex-row md:space-y-0"
         >
