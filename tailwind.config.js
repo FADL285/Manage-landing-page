@@ -5,7 +5,7 @@ module.exports = {
       // => @media (min-width: (size)px) { ... }
       sm: '480px',
       md: '768px',
-      lg: '1024px',
+      lg: '976px',
       xl: '1440px'
     },
     extend: {
